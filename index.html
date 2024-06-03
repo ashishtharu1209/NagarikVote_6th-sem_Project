@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Orelega One', cursive; */
+    font-family: 'poppins',sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+}
+.bg{
+    background-image:url("Images/v2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:10px;
+    background-color: rgb(31, 48, 116);
+}
+.header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul li{
+    list-style: none;
+    margin-left: 20px; 
+    
+}
+.header ul li a{
+    text-decoration: none;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Rancho', cursive;
+    border-radius: 20px;
+    
+}
+.header ul li a:hover{
+    background: black;
+}
+.header ul li :after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background:rgb(255, 51, 0);
+    transition: .3s;
+    bottom: 0;
+}
+.header li a:hover:after{
+    width: 100%;
+}
+ .cent{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+ section #text{
+    color: rgb(138, 14, 14);
+    font-size: 8vw;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Rancho', cursive;
+    text-shadow:7px 5px 5px rgb(247, 129, 32);
+    
+}
+section #text:hover{
+    animation: vote 0.5s ease-out  ;
+}
+@keyframes vote{
+    0%{
+          
+    }
+    50%{
+        font-size: 10vw; 
+    }
+    100%{
+
+    }
+}  
+ #btn{
+    position:absolute ;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background:black;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(260px);
+}
+#btn:hover{
+    box-shadow: 5px 5px 10px gray;
+} 
+.second{
+    padding: 20px;
+    background: rgb(2, 4, 15);
+    min-height: 100vh;
+}
+.second h1{
+    font-size:45px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Rancho', cursive;
+    text-align: center;
+}
+.second h2{
+    font-size:45px;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.second p{
+    font-size: 18px;
+    color: #fff;
+}
+.third{
+    background-image: url("Images/voteee.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background: linear-gradient(to right, #26D0CE, #1A2980); 
+
+  }
+
+  .card a {
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    font-size: 18px;
+  }
+  .card a:hover {
+    opacity: 0.7;
+  }
+
+
+footer{
+    padding: 20px;
+    margin: 0px;
+    background:rgb(31, 48, 116);
+    color: white;
+}
+.sociallogo{
+    text-align: center;
+    padding: 10px;
+}
+.sociallogo a{
+    margin: 7px;
+    color: #f0e6e6;
+    position: relative;
+}
+.sociallogo a:hover{
+    color: rgb(255, 77, 0);
+}
+@media screen and (max-width:620px) {
+    section #text{
+        font-size: 80px;
+    }
+}
+@media screen and (max-width:480px) {
+
+    .header .logo{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .header ul li{
+        margin-left: 5px; 
+    }
+    .header ul li a{
+        padding: 6px 10px;
+        font-size: 20px;
+    }
+    section #text{
+        font-size: 60px;
+    }
+
+    
+    
+}
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>नागरीक-भोट🗳️</title>
+    <meta name='viewport' content='width=device-width, initial-sScale=1'>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="bg">
+        <header class="header navbar-fixed-top">
+            <br><br><div style=" position: absolute;
+          top: 20%;
+          left:50%;
+          transform: translateX(-50%) translateY(-50%);
+          color: #f2f8f9;
+          font-size: 40px;
+          font-family: Orbitron;
+          letter-spacing: 2px;" id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+    
+<ul >  <a href="index.html"> 
+            <img style="
+           max-height: 150px;
+          "src="Images/remove.png" alt="logo">
+        </a>
+    </a>
+                <li><a style="margin:20px; font-size: 35px;" href="#">Home <i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li><a  style="margin:20px;  font-size: 35px;" href="#about">About <i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                <li><a  style="margin:20px;  font-size: 35px;"href="#view">Result <i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                <li><a  style="margin:20px;  font-size: 35px;"href="Login.php">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+                <a href="index.html"> 
+                    <img style="
+                   max-height: 150px;
+                  "src="Images/remove.png" alt="logo">
+                </a>
+            </a>
+            </ul>
+       
+        </header>
+
+        <section class="cent">
+            <h1 id="text">&quot; हाम्रो भोट
+                <br> हाम्रो भविष्य &quot;</h1>
+            <br><br>
+            <a href="Register.php" id="btn">Register</a>
+          
+        </section>
+    </div>
+   
+
+    <div class="second" id="about">
+        <br><br><br><br> <br><br><br><br><br><br><br><br>
+        <h1 >About</h1>
+        
+        <h2>
+            &quot; DON'T BE A LOSER BE A CHOOSER &quot;
+        </h2>
+        <br><br>
+
+        <p style="color: aqua;">Our Software "नागरीक-भोट🗳️" is a online voting system is software platform that allows groups to securely conduct votes. High-quality
+            online voting systems
+            balance ballot security, accessibility, and the overall requirements of an organization's voting
+            event.<br><br>
+            The Online Voting App is a secure and user-friendly platform designed to facilitate electronic voting for various types of elections, including political, organizational, and social events. This app aims to modernize the voting process by providing a convenient, efficient, and accessible way for users to cast their votes from anywhere in the world, ensuring high participation rates and reliable election outcomes<br><br>
+            At their core, online voting systems protect the integrity of your vote by preventing voters from being able
+            to vote multiple times.The app offers an intuitive interface that is easy to navigate, ensuring a seamless voting experience for users of all ages and technical skills.
+            As a digital platform, they eliminate the need to gather in-person, cast votes using paper, or by any other
+            means
+            (e.g. email, insecure survey software). Users sign up and create an account using their email or social media accounts. Identity verification may be required.<br><br>
+            You may hear an online voting system being referred to as an online e- voting system, or electronic voting.
+            These all make reference to the same thing: a secure voting tool that allows your group to collect input
+            from your group
+            and closely scrutinize the results in real time.Users select their preferred candidates or options, review their choices, and submit their votes. The app provides immediate confirmation and a receipt for their vote.After the election period ends, users can view the results if they are made public by the administrators.
+            <br><br><br><br>
+            Online voting : Safest way to held Small level Elections in the Pandemic (COVID-19).
+        </p><br><br>
+
+    </div>
+
+
+
+    <div class="third" id="view">
+        <br><br> <br><br> <br><br><br><br><br><br><br><br>
+      
+        <br><br>
+
+        <div class="card">
+            <br><br>
+            <i class="fas fa-poll-h fa-10x" style="color: black;"></i>
+            <h1>Result</h1><br><br>
+            <p><a href="Result_Index.php">View</a></p>
+        </div>
+        <br><br>
+        
+    </div>
+    
+
+    <footer>
+        <center>
+            <div class="sociallogo">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <address>
+                <br>
+                <a href="index.html"> 
+                    <img style="
+                   max-height: 150px;
+                  "src="Images/remove.png" alt="logo">
+                </a>
+            </a>
+                <h4 >Contact</h4>
+                &quot; Kathmandu, Nepal &quot;<br><br>
+                Election@gmail.com<br>
+                voteme@gmail.com<br>
+                99988790
+            </address> <br>
+            &copy Copyright 2024 by XXX. All Right Reserved
+        </center>
+    </footer>
+</body>
+<script src="test.js"></script>
+
+
+</html>
